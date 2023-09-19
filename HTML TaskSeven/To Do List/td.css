@@ -1,0 +1,102 @@
+body 
+  {
+    font-family: Arial;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container 
+  {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  input[type="text"] 
+  {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button 
+  {
+    width: calc(100% - 20px);
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+  }
+  
+  button.delete-button 
+  {
+    background-color: #e40000; /* Red color */
+    color: white;
+    font-size: 1.2em; /* Adjusted font size for the X mark */
+  }
+  
+  button.delete-button:hover 
+  {
+    background-color: #940909; /* Darker red on hover */
+  }
+  
+  button.toggle-button 
+  {
+    background-color: #09c548; /* Green color */
+    color: white;
+    font-size: 1.2em; /* Adjusted font size for the checkmark */
+  }
+  
+  button.toggle-button:hover 
+  {
+    background-color: #006108; /* Darker green on hover */
+  }
+  
+  ul 
+  {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li 
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  li.done 
+  {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+  }
+  
+  li .icons 
+  {
+    display: flex;
+    align-items: center;
+  }
+  
+  li .icons button 
+  {
+    margin-left: 10px;
+  }
+  

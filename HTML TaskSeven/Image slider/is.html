@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slider</title>
+</head>
+<body>
+  <div id="slider">
+    <img src="https://jsonplaceholder.typicode.com/albums/1/photos/1" >
+    <img src="https://jsonplaceholder.typicode.com/albums/1/photos/2" alt="Image 2">
+    <img src="https://jsonplaceholder.typicode.com/albums/1/photos/3" alt="Image 3">
+    <img src="https://jsonplaceholder.typicode.com/albums/1/photos/4" alt="Image 4">
+    <img src="https://jsonplaceholder.typicode.com/albums/1/photos/5" alt="Image 5">
+  </div>
+  <div id="controls">
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="next">Next</button>
+    <button id="previous">Previous</button>
+    <button id="speed-1x-6s">1x 6s</button>
+    <button id="speed-2x-3s">2x 3s</button>
+    <button id="speed-3x-2s">3x 2s</button>
+  </div>
+  <script>
+    var slider = document.getElementById('slider');
+    var images = slider.getElementsByTagName('img');
+    var currentImage = 0;
+    var playButton = document.getElementById('play');
+    playButton.addEventListener('click', function() {
+      // Start auto-playing the slider
+      var interval = setInterval(function() {
+        currentImage++;
+        if (currentImage >= images.length) {
+          currentImage = 0;
+        }
+        slider.style.backgroundImage = 'url(' + images[currentImage].src + ')';
+      }, 6000);
+    });
+    var stopButton = document.getElementById('stop');
+    stopButton.addEventListener('click', function() {
+      // Stop auto-playing the slider
+      clearInterval(interval);
+    });

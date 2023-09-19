@@ -1,0 +1,32 @@
+/* this is style for web page
+body 
+{
+    font-family: Arial, sans-serif;
+}
+  
+
+
+
+
+
+#user-posts-container 
+  {
+    margin: 20px;
+  }
+  
+  #user-posts-list 
+  {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #user-posts-list li
+  {
+    margin-bottom: 10px;
+  }
+  
+  #user-posts-list ol 
+  {
+    padding-left: 20px;
+  }
+  */ 
